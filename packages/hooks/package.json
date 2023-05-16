@@ -1,0 +1,8 @@
+{
+  "name": "hooks",
+  "version": "0.0.0",
+  "main": "./index.tsx",
+  "dependencies": {
+    "typescript": "latest"
+  }
+}
