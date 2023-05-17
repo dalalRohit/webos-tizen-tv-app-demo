@@ -5,7 +5,7 @@ import { useSystemInfo } from "hooks";
 export default function Web() {
   const info = useSystemInfo();
   return (
-    <>
+    <div>
       <Head>
         <title>Tizen </title>
       </Head>
@@ -17,6 +17,6 @@ export default function Web() {
         </>
       )}
       <Button />
-    </>
+    </div>
   );
 }
