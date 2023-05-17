@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import Script from "next/script";
+import "ui/global.css";
 
 export default function MyAppWebOsTv({ Component, pageProps }: AppProps) {
   return (
