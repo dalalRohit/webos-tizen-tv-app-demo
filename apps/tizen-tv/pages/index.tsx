@@ -2,7 +2,7 @@ import { Button } from "ui";
 import Head from "next/head";
 import { useSystemInfo } from "hooks";
 
-export default function Web() {
+const Web = () => {
   const info = useSystemInfo();
   return (
     <div>
@@ -19,4 +19,5 @@ export default function Web() {
       <Button />
     </div>
   );
-}
+};
+export default Web;
