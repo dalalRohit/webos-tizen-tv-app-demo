@@ -6,3 +6,65 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* plan page  */
+.cross {
+  position: relative;
+  display: inline-block;
+}
+.cross::before,
+.cross::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  right: -18px;
+  top: 45%;
+}
+.cross::before {
+  border-bottom: 4px solid #ff0066;
+  -webkit-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  width: 90px;
+}
+
+@layer components {
+  /* custom-btn  */
+  .custom_btn {
+    @apply inline-flex justify-center items-center px-4 py-2  rounded-sm font-semibold text-white uppercase transition duration-150;
+  }
+  .primary_btn {
+    @apply bg-[#ff0066];
+  }
+  /* icon  */
+  .start {
+    @apply mr-2 flex justify-center items-center;
+  }
+  .end {
+    @apply ml-2 flex justify-center items-center;
+  }
+}
+
+/* .custom_btn {
+  @apply inline-flex items-center px-4 py-2 rounded-sm font-semibold text-white uppercase transition duration-150;
+}
+.primary_btn {
+  @apply bg-[#ff0066];
+} */
+
+/* custom-btn  */
+/* @layer components {
+  .custom_btn {
+    @apply inline-flex items-center px-4 py-2 rounded-sm font-semibold text-white uppercase transition duration-150;
+  }
+} */
+/* variantbtn */
+/* .primary_btn {
+    @apply bg-[#FF0066];
+  } */
+/* .secondary_btn {
+    @apply bg-white text-[#000];
+  }
+  .outline_btn {
+    @apply border border-[#FF0066] hover:bg-[#FF0066] hover:text-white hover:border-transparent active:bg-[#FF0066];
+  } */
+/* } */

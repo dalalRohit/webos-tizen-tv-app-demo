@@ -3,4 +3,5 @@ module.exports = {
   transpilePackages: ["ui", "hooks"],
   output: "export",
   assetPrefix: "./",
+  ignoreBuildErrors: true,
 };

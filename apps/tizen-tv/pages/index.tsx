@@ -1,22 +1,29 @@
-import { Button } from "ui";
+import { Plan } from "ui";
 import Head from "next/head";
-import { useSystemInfo } from "hooks";
 
 const Web = () => {
-  const info = useSystemInfo();
   return (
-    <div>
+    <div className="  ">
       <Head>
         <title>Tizen </title>
       </Head>
-      <h1>Tizen TV</h1>
-      {info && (
-        <>
-          <h1>system info</h1>
-          <pre>{JSON.stringify(info)}</pre>
-        </>
-      )}
-      <Button />
+      <Plan />
+      {/* <div className="grid gap-8">
+        <Button
+          startIcon={<CustomIcon size={14} icon="play-solid" color="white" />}
+          className=" bg-[#ff0066] "
+        >
+          Read More
+        </Button>
+        <Button
+          endIcon={<CustomIcon size={14} icon="play-solid" color="black" />}
+          className=" bg-white text-black"
+        >
+          Read More
+        </Button>
+        <Button className=" border-2 border-white ">Read More</Button>
+        <Button className=" bg-white text-black ">Read More</Button>
+      </div> */}
     </div>
   );
 };

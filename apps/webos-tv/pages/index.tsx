@@ -1,4 +1,4 @@
-import { Button } from "ui";
+// import { Button } from "ui";
 import Head from "next/head";
 import { useSystemInfo } from "hooks";
 
@@ -16,7 +16,7 @@ const Docs = () => {
           <pre>{JSON.stringify(info)}</pre>
         </>
       )}
-      <Button />
+      {/* <Button /> */}
     </>
   );
 };
